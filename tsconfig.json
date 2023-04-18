@@ -3,9 +3,10 @@
     "compilerOptions": {
         "preserveConstEnums": true,
         "outDir": "./dist",
-        "module": "ES6",
+        "module": "CommonJS",
         "moduleResolution": "node",
-        "rootDir": "src"
+        "rootDir": "src",
+        "lib": ["ES2017", "DOM"]
     },
     "include": [
         "src/**/*"
