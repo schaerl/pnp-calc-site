@@ -13,11 +13,24 @@
 <body>
     <div id="main">
         <h1>PnP Talent Calculator</h1>
+        <div class="inputWrapper" name="Settings">
+            <div>
+                Anzahl Würfe
+            </div>
+            <input id="throwAmount" type="number" value="1000" min="1000" max="10000000" step="1000"/>
+            <button id="simulateButton">Simulieren</button>
+        </div>
         <div class="inputWrapper" name="Skills">
             <div id="skillContent"></div>
         </div>
         <div class="inputWrapper" name="Talente">
-            <table id="talentWrapper"></table>
+            <table id="talentWrapper">
+                <tr>
+                    <th>Talent</th>
+                    <th>Talentwert</th>
+                    <th>Chance auf Erfolg</th>
+                </tr>
+            </table>
         </div>
     </div>
 </body>

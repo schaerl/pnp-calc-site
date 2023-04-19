@@ -49,8 +49,14 @@ function createTalentElement(talent: string): HTMLElement {
     input.setAttribute("min", "0");
     input.setAttribute("max", "18");
     td2.appendChild(input);
+    const td3 = document.createElement("td");
+    const display = document.createElement("input");
+    display.classList.add("resultDisplay");
+    display.setAttribute("disabled", "true");
+    td3.appendChild(display);
     tr.appendChild(td1);
     tr.appendChild(td2);
+    tr.appendChild(td3);
     return tr;
 }
 

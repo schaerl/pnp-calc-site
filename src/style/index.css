@@ -1,5 +1,6 @@
 body{
     overflow-x: scroll;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #main {
@@ -9,6 +10,10 @@ body{
     
 }
 
+th{
+    text-align:left;
+}
+
 #skillContent {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -16,11 +21,15 @@ body{
 }
 
 .skill-item {
-    margin: auto;
+    margin: 0.2em auto;
 }
 
 .skill-item input {
     max-width: 6em;
+}
+
+.resultDisplay{
+    width: 3em;
 }
 
 .inputWrapper {
