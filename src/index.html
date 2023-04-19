@@ -7,12 +7,19 @@
     <link rel="stylesheet" type="text/css" href="style/index.css">
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     <script type="module">import "./bundle.js";</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-    <h1>PnP Talent Calculator</h1>
-    <div id="skillWrapper"></div>
-    <div id="talentWrapper"></div>
+    <div id="main">
+        <h1>PnP Talent Calculator</h1>
+        <div class="inputWrapper" name="Skills">
+            <div id="skillContent"></div>
+        </div>
+        <div class="inputWrapper" name="Talente">
+            <table id="talentWrapper"></table>
+        </div>
+    </div>
 </body>
 
 </html>
