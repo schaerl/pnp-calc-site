@@ -53,7 +53,7 @@ th{
 }
 
 h1 {
-    color: red;
+    color: rgb(82, 59, 29);
     margin: auto;
 }
 
@@ -70,7 +70,13 @@ h1 {
 }
 
 @media screen and (min-width: 52em) {
+    body {
+        max-width: 52em;
+        margin: auto;
+    }
+   
     #skillContent {
         grid-template-columns: repeat(8, 1fr);
     }
 }
+
