@@ -11,7 +11,8 @@
     "watch": "npm-run-all -p watch:* watchify",
     "watch:static": "npm-watch compile:static",
     "watch:server": "browser-sync start --no-open -s ./dist -w ",
-    "watchify": "watchify ./src/script/index.ts -v -p [ tsify ] -t [ babelify --global --presets [ @babel/preset-env ] ] -o dist/bundle.js"
+    "watchify": "watchify ./src/script/index.ts -v -p [ tsify ] -t [ babelify --global --presets [ @babel/preset-env ] ] -o dist/bundle.js",
+    "release" : "npm-run-all -s clean compile"
   },
   "watch": {
     "compile:static": {
