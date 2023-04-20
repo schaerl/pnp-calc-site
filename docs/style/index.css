@@ -1,0 +1,82 @@
+body{
+    overflow-x: scroll;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    
+}
+
+th{
+    text-align:left;
+}
+
+#skillContent {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+}
+
+.skill-item {
+    margin: 0.2em auto;
+}
+
+.skill-item input {
+    max-width: 6em;
+}
+
+.resultDisplay{
+    width: 3em;
+}
+
+.inputWrapper {
+    border: 2px solid burlywood;
+    border-radius: 10px;
+    padding: 0.6em;
+    position:relative;
+    min-width: 10em;
+    margin: 1em 0;
+}
+
+.inputWrapper::before {
+    content: attr(name);
+    position: absolute;
+    top: -0.8em;
+    color:burlywood;
+    padding: 0 10px;
+    background: #fff;
+    border: 2px solid burlywood;
+    border-radius: 10px;
+}
+
+h1 {
+    color: rgb(82, 59, 29);
+    margin: auto;
+}
+
+@media screen and (min-width: 13em) {
+    #skillContent {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 26em) {
+    #skillContent {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (min-width: 52em) {
+    body {
+        max-width: 52em;
+        margin: auto;
+    }
+   
+    #skillContent {
+        grid-template-columns: repeat(8, 1fr);
+    }
+}
+
